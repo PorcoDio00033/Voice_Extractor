@@ -2,26 +2,26 @@
 # Just run: pip install -r requirements.txt
 
 # Core dependencies
-rich
+rich<14,>=12.4.4
 ffmpeg-python
 soundfile
-numpy
+numpy<2.3.0,>=2
 tqdm
 
 # PyTorch with CUDA support (automatically uses CPU if no GPU)
 --extra-index-url https://download.pytorch.org/whl/cu121
-torch~=2.7.0
-torchvision~=0.22.0
+torch>=2.7.0
+torchvision>=0.22.0
 torchaudio~=2.7.0
 
 # Audio processing and ML
-pyannote.audio~=3.3.2
-openai-whisper~=20240930
+pyannote.audio>=3.3.2
+openai-whisper>=20240930
 matplotlib
 librosa
-speechbrain~=1.0.0
-torchcrepe~=0.0.21
-silero-vad~=5.1.2
+speechbrain>=1.0.0
+torchcrepe>=0.0.21
+silero-vad>=5.1.2
 
 # Dependencies for components
 pytorch-lightning
@@ -33,6 +33,3 @@ onnxruntime
 
 # WeSpeaker (will be auto-installed)
 wespeaker @ git+https://github.com/wenet-e2e/wespeaker.git
-
-
-
