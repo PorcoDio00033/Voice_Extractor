@@ -12,7 +12,7 @@ tqdm
 --extra-index-url https://download.pytorch.org/whl/cu121
 torch>=2.7.0
 torchvision>=0.22.0
-torchaudio>=2.7.0,<2.9
+torchaudio~=2.7.0
 
 # Audio processing and ML
 pyannote.audio>=3.3.2
@@ -33,4 +33,5 @@ onnxruntime
 
 # WeSpeaker (will be auto-installed)
 wespeaker @ git+https://github.com/wenet-e2e/wespeaker.git
+
 
